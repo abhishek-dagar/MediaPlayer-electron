@@ -1,0 +1,134 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 10pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #949AA7;
+    background-color: #2C313C;
+}
+/* APP BASE */
+.mainApp{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #343B48;
+    -webkit-box-sizing: border-box;
+}
+.mainApp > .topBar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 6vh;
+    border-bottom: 3px solid #343B48;
+    background-color: #1B1D23;
+    -webkit-user-select: none;
+}
+.topBar > .titleBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.topBar > .titleBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.titleBar > .title{
+    margin-left: 10px;
+    width: 100%;
+    line-height: 30px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    -webkit-app-region: drag;
+}
+
+.topBar > .titleBarBtns{
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    height: 6vh;
+}
+.titleBarBtns > .topBtn{
+    width: 40px;
+    height:6vh;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.titleBarBtns > .topBtn:hover{
+    background-color: #272C36;    
+}
+.titleBarBtns > #closeBtn:hover{
+    background-color: red;    
+}
+.titleBarBtns > .topBtn:active{
+    background-color: #4F9FEE;
+
+}
+.titleBarBtns > #minimizeBtn{
+    background-image: url("../icons/minimize-tab.png");
+}
+.titleBarBtns > .maximizeBtn{
+    background-image: url("../icons/maximize.png");
+}
+.titleBarBtns > .restoreBtn{
+    background-image: url("../icons/restore.png");
+}
+.titleBarBtns > #closeBtn{
+    background-image: url("../icons/close1.PNG");
+}
+
+.menu
+{
+    width: 100%;
+    height: 3vh;
+    border-bottom: 2px solid #343B48;
+}
+ul{
+    margin: 2px;
+    display: none;
+    padding: 0;
+    background: rgb(48, 47, 47);
+    border: 2px solid rgb(31, 30, 30);
+    width: 10%;
+    z-index: 100;
+    position: absolute;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+}
+li button{
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 4px;
+    width: 100%;
+    text-align: left;
+}
+li button span{
+    position: absolute;
+    right: 10%;
+}
+
+.drop-media #mediaBtn{
+    background: transparent;
+    color: white;
+    border: none;
+    text-align: center;
+}
+button{
+    border: none;
+    outline: none;
+}

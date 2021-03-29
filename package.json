@@ -1,0 +1,37 @@
+{
+  "name": "my-app",
+  "productName": "Media Player",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "",
+  "discription": "this is my first application",
+  "scripts": {
+    "start": "electron .",
+    "build-installer": "electron-builder"
+  },
+  "build": {
+    "appId": "my-app",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/icons/appicon.ico"
+    },
+    "nsis": {
+      "installerIcon": "src/icons/appicon.ico",
+      "uninstallerIcon": "src/icons/appicon.ico",
+      "uninstallDisplayName": "Media Player",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.2",
+    "electron-builder": "^22.10.5",
+    "electron-localshortcut": "^3.2.1",
+    "electron-packager": "^15.2.0"
+  },
+  "description": ""
+}

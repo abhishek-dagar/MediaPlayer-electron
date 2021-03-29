@@ -1,0 +1,17 @@
+
+  "build": {
+    "appId": "my-app",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/appicon.ico"
+    },
+    "nsis": {
+      "installerIcon": "src/appicon.ico",
+      "uninstallerIcon": "src/appicon.ico",
+      "uninstallDisplayName": "Media Player",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
