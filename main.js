@@ -7,9 +7,9 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 1200,
     height: 600,
-    minHeight:560,
-    minWidth:940,
-    // frame:false,
+    minHeight:600,
+    minWidth:990,
+    frame:false,
     icon: __dirname+'/src/icons/appicon.ico',
     webPreferences: {
       enableRemoteModule:true,
